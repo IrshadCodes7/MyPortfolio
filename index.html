@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myporfolio|Arshad</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <script>
+        var imageSources = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"]
+        var index = 0;
+        setInterval(function () {
+            if (index === imageSources.length) {
+                index = 0;
+            }
+            document.getElementById("image").src = imageSources[index];
+            index++;
+        }, 2000);
+        var images = ["Ramashis1.jpg", "uit1.jpg", "Ramashis2.jpg", "uit2.jpg"]
+        var i = 0;
+        setInterval(function () {
+            if (i === images.length) {
+                i = 0;
+            }
+            document.getElementById("institute-img").src = images[i];
+            i++;
+        }, 2000);</script>
+</head>
+
+<body>
+    <section id="header-grid">
+        <header id="header">
+            <h1>Hi all I'm Irshad 👋👋</h1>
+        </header>
+    </section>
+    <nav id="nav">
+        <div>
+            <section id="nav-head"><img src="logos/logo.png" alt="error">
+                <h2>Md Irshad Ansari</h2>
+            </section>
+            <section id="nav-utility">
+                <ul>
+                    <li><a href="#Profile">👨‍💼Personal Info</a></li>
+                    <li><a href="#Education">📚My Education</a></li>
+                    <li><a href="#Skills">🧑‍💻My skills</a></li>
+                    <li><a href="#projects">⚒️Projects</a></li>
+                    <li><a href="#Contact">📞Contact me</a></li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+    <!--Profile section-->
+    <div id="container">
+        <section id="Profile">
+            <h1 class="sectionHead">Personal Info</h1>
+            <div id="p-content">
+                <p>I am Md Irshad Ansari, a computer science and engineering student at University Institute of
+                    Technology,
+                    Burdwan University. I live in Burdwan, West Bengal, India. My career goal is to become a software
+                    engineer
+                    and create innovative solutions using artificial intelligence and machine learning. I am passionate
+                    about
+                    learning new technologies and exploring different software domains. I have the ability to work both
+                    independently and collaboratively with others.
+                </p>
+                <img id="image" src=" " alt="error">
+            </div>
+        </section>
+        <!--Education section -->
+        <section id="Education">
+            <h1 class="sectionHead">Education Info</h1>
+
+            <table>
+                <tr>
+                    <th>Degree/Course</th>
+                    <th>Institute/School</th>
+                    <th>University/Board</th>
+                    <th>Percentage/CGPA</th>
+                    <th>Year of passing</th>
+                </tr>
+                <tr>
+                    <td>Secondary</td>
+                    <td>Burdwan Sri Ramashish Hindi High School</td>
+                    <td>WBBSE</td>
+                    <td>70.71%</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>Higher Secondary</td>
+                    <td>Burdwan Sri Ramashish Hindi High School</td>
+                    <td>WBCHSE</td>
+                    <td>75.4%</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>B.E.(computer science and engineering)</td>
+                    <td>University Institute of Technology</td>
+                    <td>The University of Burdwan</td>
+                    <td>8.89 SGPA(1st Sem)</td>
+                    <td>2026</td>
+                </tr>
+            </table>
+            <div>
+                <img id="institute-img" alt="error">
+            </div>
+        </section>
+        <!--Skills section-->
+        <section id="Skills">
+            <h1 class="sectionHead">Skills</h1>
+            <div class="box-container">
+                <div class="box">
+                    <h3>programming:</h3>I have experience in C programming and am currently learning DSA.
+                </div>
+                <div class="box">
+                    <h3>Frontend:</h3> I am a beginner in web development
+                    and have knowledge of HTML, CSS, and JavaScript for the frontend.I also have some familiarity with
+                    APIs
+                    such as pug, nodemon, and express.
+                </div>
+                <div class="box">
+                    <h3>Backend:</h3> For the backend, I have some experience with Node.js and
+                    JavaScript. Additionally, I have worked with MongoDB as a database.
+                </div>
+
+            </div>
+            <div class="btn">
+                <h3>Download My Resume</h3>
+            </div>
+            <div class="btn"><a href="Resume_Irshad_Format7.pdf">DOWNLOAD</a></div>
+        </section>
+        </section>
+        <!--Projects-->
+        <section id="projects">
+            <h1 class="sectionHead">Projects</h1>
+            <div class="box-container">
+                <div class="box">
+                    <h3>Project-1</h3>“Dear’s Dance Academy” is a dance school website that i created using Pug and CSS
+                    for the frontend,JavaScript and Node.js for the backend.I used MongoDB as the database for
+                    the contact page’s form. The website features an attractive look and photos, and has a contact form
+                    that interested individuals can fill out to receive a call or email from the academy to learn more
+                    about classes and fees.
+                </div>
+                <div class="box">
+                    <h3>Project-2</h3>“I created a landing page for the city of Burdwan using HTML and CSS only. The
+                    page features an attractive interface and some cool information about the city
+                </div>
+                <div class="box">
+                    <h3>project-3</h3>“I created a calculator website using HTML, CSS, and JavaScript. The calculator
+                    can perform basic arithmetic operations and has an interesting interface.
+                </div>
+
+            </div>
+        </section>
+        <!--Contact section-->
+        <section id="Contact">
+            <h1 class="sectionHead">Contact Me</h1>
+            <div id="contact-container">
+                <div class="contact-box" id="email"> Email:irshadmd92236@gmail.com</div>
+                <div class="contact-box" id="phone"> phone:8918590754</div>
+            </div>
+            <div id="logo-container"></div>
+            <a href="https://www.linkedin.com/in/md-irshad-ansari-98192b251"><img class="logo" src="logos/in.jpg"
+                    alt="error"></a>
+
+            <a href="https://instagram.com/cosmicking_arshad?utm_source=qr&igshid=YzU1NGVlODEzOA%3D%3D"><img
+                    class="logo" src="logos/insta.png" alt="error"></a>
+
+            <a href="https://www.facebook.com/profile.php?id=100040993493827&mibextid=7cd5pb"><img class="logo"
+                    src="logos/fb.jpg" alt="error"></a>
+            <a href="https://github.com/IrshadCodes7"><img class="logo" src="logos/hub.png" alt="error"></a>
+            <div id="foot">
+                <footer>Made with ❤️ by Irshad</footer>
+            </div>
+        </section>
+    </div>
+</body>
+
+
+</html>
